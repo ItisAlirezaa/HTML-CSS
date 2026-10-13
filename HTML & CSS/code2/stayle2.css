@@ -1,0 +1,16 @@
+*{
+	text-align: right;
+}
+.boxmodel{
+	border: 5px solid black;
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+	margin: 10px;
+}
+li {
+	list-style: none;
+    display: inline-block;
+}
+section{
+	text-align: center;
+}

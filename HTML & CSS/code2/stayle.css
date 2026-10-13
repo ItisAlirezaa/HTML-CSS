@@ -1,0 +1,53 @@
+*{
+	text-align: right;
+}
+body{
+/*background-image: url(https://image.api.playstation.com/vulcan/img/rnd/202010/2621/H9v5o8vP6RKkQtR77LIGrGDE.png);
+background-size:cover;*/ 
+}
+/*p{
+	color : red;
+	text-align: center;
+	border: 5px dashed red;
+	cursor: pointer;
+}
+*/
+p{
+	color: pink;
+	text-decoration: underline;
+	text-transform: uppercase;
+	border: 5px dashed red;
+	line-height: 20px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+  font-family: "Dancing Script", cursive;
+
+}
+	/*text-align: center;*/
+
+
+li{
+	list-style: none;
+	display: inline-block;
+
+}
+img{
+	background-size: cover;
+	float: left;
+}
+footer{
+	clear: both;
+	text-align: center;
+}
+.web{
+	color: blue;
+	border:  5px dashed green;
+}
+.webtext{
+	color: yellow;
+	border:  5px solid green;
+}
+#div1{
+	background-color: white;
+}

@@ -1,0 +1,377 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'B Nazanin', sans-serif;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 70%;
+}
+body {
+    background-color: #f5f5f5;
+    direction: rtl;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #3498db;
+}
+
+.login-btn {
+    background-color: #3498db;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Signup/Login Form Styles */
+.signup-form {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group input[type="checkbox"],
+.form-group input[type="radio"] {
+    width: auto;
+    margin-left: 10px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #2980b9;
+}
+
+/* کالاها خرید */
+.products {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #ededed;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 70%;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.product-card h3 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.product-card p {
+    padding: 0 10px 10px;
+    color: #666;
+}
+
+.product-card a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-card a:hover {
+    background-color: #e74c3c;
+}
+
+/* استایل محصول */
+.product-details {
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 22px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    
+}
+
+.product-details img {
+    width: 100%;
+    max-height: 150px;
+    max-width: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-details h1 {
+    margin: 20px 0;
+}
+
+.product-details p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.product-details .price {
+    color: #3498db;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.product-details button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-details button:hover {
+    background-color: #2980b9;
+}
+/*footer*/
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    width: 100%; /* اطمینان از اینکه فوتر کل عرض صفحه رو بگیره */
+}
+
+.footer-logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex; /* چیدمان افقی */
+    justify-content: center; /* وسط‌چین کردن */
+    gap: 15px; /* فاصله بیشتر بین آیکون‌ها */
+    flex-wrap: nowrap; /* جلوگیری از رفتن به خط بعدی */
+    align-items: center;
+}
+
+.footer-icon {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.iconc {
+      margin-top: 0px;
+        width: 50px; /* اندازه کوچک برای آیکون‌ها */
+    height: 50px;
+}
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-icon-img {
+    width: 16px; /* اندازه کوچک برای آیکون‌ها */
+    height: 16px;
+    vertical-align: middle;
+}
+/* Cart Section Styles */
+.cart-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cart-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.cart-table td {
+    vertical-align: middle;
+}
+
+.cart-table .product-name {
+    font-weight: bold;
+}
+
+.cart-table .quantity-input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cart-table .remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-table .remove-btn:hover {
+    background-color: #c0392b;
+}
+
+.cart-total {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cart-total span {
+    color: #3498db;
+}
+
+.checkout-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.checkout-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
